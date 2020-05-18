@@ -68,7 +68,7 @@
 
         async function scanCode() {
             const result = await liff.scanCode()
-            document.getElementById("scanCode").append(result.value)
+            document.getElementById("btnScanCode").append(result.value)
         }
 
         function openWindow() {
@@ -82,7 +82,7 @@
             const friend = await liff.getFriendship()
             document.getElementById("friendship").append(friend.friendFlag)
             if (!friend.friendFlag) {
-                if (confirm("คุณยังำม่ได้เพิ่ท bot เพิ่มไหม?")) {
+                if (confirm("คุณยังไม่ได้เพิ่ท bot เพิ่มไหม?")) {
                     window.location = "https://line.me/R/ti/p/@996brkkl"
                 }
             }
@@ -148,7 +148,7 @@
                 }
             });
             await liff.init({
-                liffId: "1654217904-A8erJJ2j"
+                liffId: "1654223644-8la4gQgP"
             })
         }
         main()
